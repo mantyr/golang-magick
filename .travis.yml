@@ -7,7 +7,7 @@ go:
     - 1.4
     - tip
 
-install
+install:
     - mkdir -p $HOME/gopath/src/github.com/mantyr/golang-magick/imagemagick
     - cd $HOME/gopath/src/github.com/mantyr/golang-magick/imagemagick
     - wget http://distfiles.gentoo.org/distfiles/
