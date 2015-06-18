@@ -14,8 +14,8 @@ install:
     - tar -xf ./ImageMagick-6.9.0-3.tar.xz
     - cd ./ImageMagick-6.9.0-3
     - ./configure
-    - ./make
-    - ./make install
+    - make
+    - make install
     - cd $HOME/gopath/src/github.com/mantyr/golang-magick
 
 before_install:
