@@ -7,5 +7,16 @@ go:
     - 1.4
     - tip
 
+install
+    - mkdir -p $HOME/gopath/src/github.com/mantyr/golang-magick/imagemagick
+    - cd $HOME/gopath/src/github.com/mantyr/golang-magick/imagemagick
+    - wget http://distfiles.gentoo.org/distfiles/
+    - tar -xf ./ImageMagick-6.9.0-3.tar.xz
+    - cd ./ImageMagick-6.9.0-3
+    - ./configure
+    - ./make
+    - ./make install
+    - cd $HOME/gopath/src/github.com/mantyr/golang-magick
+
 before_install:
     - go get github.com/nfnt/resize
